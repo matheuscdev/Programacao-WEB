@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.titulos{
+    padding:5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 128, 0);
+    color:rgb(255, 128, 0);
+}
+.container-campos{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 165);
+    background-color:  rgb(0, 0, 150);
+}
+.campo-cep{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(255, 128, 0) ;
+    width: 50%;
+    padding:10px;
+    border: 3px solid rgb(186, 93, 0);
+    border-radius:15px;
+}
+.campo-cep > #CEP{
+    text-decoration: none;
+    background-color: rgb(247, 247, 247) ;
+    border:3px solid rgb(186, 93, 0) ;
+    border-radius:15px;
+    padding:10px;
+}
+.campo-cep > #consultar-cep{
+    text-decoration: none;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(186, 93, 0) ;
+    border:3px solid rgb(186, 93, 0) ;
+    border-radius:15px;
+    padding:10px;
+    transition: .3s ease-in-out;
+    cursor:pointer;
+}
+.campo-cep > #consultar-cep:hover{
+    color:rgb(186, 93, 0);
+    background-color: #fff ;
+}
+.campo-cep > i{
+    font-size: 25px;
+    color:rgb(255, 60, 0);
+    
+}
+.dados{
+    display:none;
+    position: relative;
+    flex-direction: column;
+    margin:30px;
+    width: 80%;
+    height: auto;
+    background-color: rgb(255, 128, 0);
+    color:#fff;
+    border:1px double rgb(255, 128, 0);
+    padding:20px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 128, 0, 0.616);
+}
+.container-dados{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.dado{
+    position: relative;
+    font-style: italic;
+    width: 300px;
+    height: auto;
+}
+.dado > .titulo-dado{
+    display:none;
+    text-decoration: underline;
+    padding: 15px 0px;
+}
+.dado > .campo-dado{
+    display: none;
+    background-color: rgb(186, 93, 0)  ;
+    padding:10px;
+    margin-left:3%;
+    width: 80%;
+    border-radius:15px;
+}
+#erro{
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+    display: none;
+}
+.resultado{
+    display:none;
+}
+.rodape{
+    position: relative;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}

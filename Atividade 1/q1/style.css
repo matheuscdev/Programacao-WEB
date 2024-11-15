@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-color:#fff;
+}
+.principal{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cabecalho{
+    background-color: rgba(0, 0, 255, 0.737);
+    text-shadow: 2px 2px #0000002f;
+    box-shadow: 0 5px  rgba(216, 58, 0, 0.448) ;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding:15px;
+    margin-top: 5px;
+    border-radius:5px;
+}
+
+.paragrafos{
+    display:inline;
+    background-color:rgba(0, 0, 255, 0.737);
+    color:#fff;
+    font-size:18px;
+    font-weight: bolder;
+    border:1px solid #fff;
+    border-radius:15px;
+    text-shadow: 0px 3px 5px rgba(0, 0, 255, 0.234);
+    margin:10px;
+    padding:5px;
+    
+}
+.rodape{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.626);
+    bottom: 0;
+    color:#fff;
+    padding:30px;
+    text-align: center;
+}

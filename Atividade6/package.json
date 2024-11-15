@@ -1,0 +1,20 @@
+{
+  "name": "p.web",
+  "version": "1.0.0",
+  "description": "Repositorio dedicado as atividades realizadas na cadeira de Programação Web!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

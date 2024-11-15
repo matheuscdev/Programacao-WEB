@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(85, 85, 85);
+    overflow-x: hidden;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #444444;
+    box-shadow: 0px 2px 5px rgba(40, 40, 40, 0.731);
+    padding: 0 30px;
+}
+.lista{
+    display:flex;
+    list-style: none;
+    padding:30px;
+}
+.item-lista{
+    position: relative;
+    padding: 0 20px;
+}
+.item-lista a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color:#fff;
+    transition: .3s ease-in-out;
+}
+.item-lista a:hover{
+    color:cyan;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side-bar{
+    background-color: #444444;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    border:2px solid rgba(97, 97, 97, 0.521);
+    border-radius:15px;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+    top:50%;
+    left:10%;
+    transform: translate(-10%,-50%);
+}
+.text-habilidades, .text-ferramentas{
+    text-align: center;
+    color:cyan;
+    padding:20px;
+    text-shadow: 3px 3px 2px #4e4e4e;
+}
+.item-habilidade{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    transition: .3s ease-in-out;
+}
+.item-habilidade > .habilidade{
+    font-size: 20px;
+    color:#fff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 3px rgba(73, 73, 73, 0.568);
+    transition: .3s ease-in-out;
+}
+.habilidade:hover{
+    transform:scale(1.2);
+    color:cyan;
+    background-color: rgb(67, 67, 67);
+    box-shadow: 2px 2px 5px rgba(49, 49, 49, 0.441);
+    border-radius:15px;
+    border:2px solid rgba(97, 97, 97, 0.521);
+    cursor: pointer;
+}
+.sobre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+    max-width: 600px;
+    padding:20px;
+    border-radius:15px;
+    background-color: #444444;
+    box-shadow: 3px 5px 5px rgb(40, 40, 40);
+    position: absolute;
+    top:50%;
+    right:10%;
+    transform: translate(-10%,-50%);
+}
+.sobre > .text{
+    position:relative;
+    color:#fff;
+    width: 80%;
+    font-size: 22px;
+    padding-top:10px;
+}
+.text-importante{
+    color:cyan;
+}
+.text-importante2{
+    color:cyan;
+}
+
+.rodape{
+    position:absolute;
+    background-color: #303030a8;
+    bottom:0;
+    width: 100%;
+    padding:20px;
+    color:#fff;
+    text-align: center;
+}

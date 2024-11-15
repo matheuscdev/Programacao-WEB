@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CEP</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container-campos">
+                <div class="titulos">
+                    <h2 >
+                        Consultar CEP
+                    </h2>
+                    <p>
+                        Insira o CEP corretamente para mais informações 
+                    </p>
+                </div>
+                <div class="campo-cep">
+                    <i class="fa-solid fa-map-location"></i>
+                    <input type="text" name="CEP" id="CEP">
+                    <button id="consultar-cep">Consultar</button>
+                </div>
+                <div class="dados">
+                    <h2 class="resultado">Resultado</h2>
+                    <small id="erro"></small>
+                    <div class="container-dados">
+                        <div class="dado">
+                            <h3 class="titulo-dado">Bairro:</h3>
+                            <span id="campo-bairro" class="campo-dado"></span>
+                        </div>
+                        
+                        <div class="dado">
+                            <h3 class="titulo-dado">Cidade:</h3>
+                            <span id="campo-localidade" class="campo-dado"></span>
+                        </div>
+                        <div class="dado">
+                            <h3 class="titulo-dado">Rua:</h3>
+                            <span id="campo-logradouro" class="campo-dado"></span>
+                        </div>
+                        <div class="dado">
+                            <h3 class="titulo-dado">Estado:</h3>
+                            <span id="campo-estado" class="campo-dado"></span>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <footer class="rodape">
+                    <p>&copy;Eros Franklin. Todos os direitos reservados</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../Atividade Promises/consulta.js"></script>
+</body>
+</html>
